@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/afterclientlogin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="content">
+              <div class="logo">
+                <a href="#">Conference Rooms</a>
+              </div>
+              <ul class="menu-list">
+                <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                <li><a href="./afterclientlogin.html" id="login-hover">Home</a></li>
+                <li><a href="#" id="login-hover">My Bookings</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+              </ul>
+              <a href="#" id="login-hover" style="color: white;"><b>Hi Client</b></a>
+              <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+        </div>
+          <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+              navbar.classList.add("show");
+              menuBtn.classList.add("hide");
+              body.classList.add("disabled");
+            }
+            cancelBtn.onclick = ()=>{
+              body.classList.remove("disabled");
+              navbar.classList.remove("show");
+              menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+              this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+          </script>
+          <br><br><br><br><br>
+          <div class="home" id="home">
+            <div>
+              <!-- <h1 style="color: rgb(22, 89, 145);">Conference Rooms</h1>
+              <p style = "color: rgb(109, 143, 170);;">Experince The Best Meetings Ever</p> -->
+              <h1 style="color: black">Conference Rooms</h1>
+              <p style = "color: black; text-transform: uppercase;">Experince The Best Meetings Ever</p>
+            </div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
+          <form class="add-rooms" action="/register" method="post">
+
+            <div class="form-header">
+              <h1>Add Rooms</h1>
+            </div>
+            <div class="form-body">
+              <div class="form-group">
+                  <label class="label-title">Building Name*</label>
+                  <input type="text" id="buildingname" class="form-input" placeholder="Enter Building Name" required="required">
+                </div>
+                <div class="form-group">
+                  <label for="Floor ID" class="label-title">Floor ID*</label>
+                  <input type="text" id="floorid" class="form-input" placeholder="enter Floor ID" required="required" />
+                </div>
+                <div class="form-group">
+                  <label for="roomid" class="label-title">Room Id</label>
+                  <input type="text" id="roomid" class="form-input" placeholder="enter your Room ID" />
+                </div>
+                <div class="form-group" >
+                  <label class="label-title">Type of Room</label>
+                  <select class="form-input" id="level" >
+                    <option value="S">Select type of room</option>
+                    <option value="B">Basic</option>
+                    <option value="p">Premium</option>
+                    <option value="E">Elite</option>
+                  </select>
+                </div>
+              <div class="form-group">
+                <label for="choose-file" class="label-title">About Room</label>
+                <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+              </div>
+              <div class="form-group">
+                  <label class="label-title">Address*</label>
+                  <input type="text" id="buildingname" class="form-input" placeholder="Street, road no ....." required="required">
+                </div>
+                <div class="form-group">
+                  <label class="label-title">City*</label>
+                  <input type="text" id="buildingname" class="form-input" placeholder="city" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="label-title">PinCode*</label>
+                  <input type="text" id="buildingname" class="form-input" placeholder="Pic code" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="label-title">Country*</label>
+                  <input type="text" id="buildingname" class="form-input" placeholder="Country" required="required">
+                </div>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn">Add Room</button>
+              <br><br>
+            </div>
+      
+          </form>
+          <footer>
+            <div class="footer-flex">
+              <div class="flex-item">
+                <h2>About</h2>
+                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Facere id consectetur
+                  amet<br> harum quisquam eius accusamus quo illo.<br>Itaque dolores assumenda,<br>accusantium tenetur ipsa at
+                  provident<br>incidunt voluptas nam explicabo?</p>
+                <p style="font-size: 15px; align-content: center;">Copyright &copy 2022 ConferenceRooms</p>
+              </div>
+              <div class="flex-item">
+                <div class="social flex">
+                  <h2>Quick Links</h2><br>
+                  <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"><h3>Facebook</h3></a></i><br><br>
+                  <i class="fab fa-twitter"><a href="https://twitter.com/"><h3>Twitter</h3></a></i><br><br>
+                  <i class="fab fa-instagram"><a href="https://www.instagram.com/"><h3>Instagram</h3></a></i><br><Br>
+                  <i class="fab fa-youtube"><a href="https://www.youtube.com/"><h3>Youtube</h3></a></i>
+                </div>
+              </div>
+              <div class="flex-item">
+                <div class="Address">
+                  <h2>Contact Us</h2><br>
+                  <i class="fas fa-map-marker-alt"></i><h3>Address</h3>
+                  <p>Hyderabad | India</p><br>
+                  <i class="fas fa-phone"></i><br><h3>Phone</h3>
+                  <p>+91 88888 88888</p><br>
+                  <i class="far fa-envelope"></i><h3>Email</h3>
+                  <p>conferenceroom@crbs.com</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

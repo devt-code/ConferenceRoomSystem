@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/afteruserlogin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <title>Conference Rooms</title>
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">Conference Rooms</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="./afteruserlogin.html" id="login-hover">Home</a></li>
+            <li><a href="./rooms.html" id="login-hover">Meeting Rooms</a></li>
+            <li><a href="#" id="login-hover">My Bookings</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+          <a href="#" id="login-hover" style="color: white;"><b>Hi User</b></a>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+  </div>
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+      <br><br><br><br><br>
+      <div class="home" id="home">
+        <div>
+          <h1 style="color: black">Conference Rooms</h1>
+          <p style = "color: black; text-transform: uppercase;">Experince The Best Meetings Ever</p>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <div class="booking rooms">
+        <div class="box">
+          <span>Meeting Date </span> <br>
+          <input type="date">
+        </div>
+        <div class="box">
+          <span>Start Time </span> <br>
+          <input type="time">
+        </div>
+        <div class="box">
+          <span>End Time </span> <br>
+          <input type="date">
+        </div>
+        <div class="box">
+          <span>Rooms Required </span> <br>
+          <input type="number" placeholder="1">
+        </div>
+        <div class="box">
+          <button class="btn availability">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+      <br>
+      <hr style="margin-left: 10px; margin-right: 10px;">
+      <br>
+      <div class="rooms">
+        <div class="roomflex">
+          <div class="ritem">
+            <img src="./images/img1.png" alt="ConferenceRoom" style="margin-left: 2px; width: 600px; height: 438px;">
+          </div>
+          <div class="rItem" style="margin-top: 40px;">
+            <h2 style="margin-left: 10px;">Best Rooms</h2>
+            <p style="font-size: 20px; margin-left: 10px;">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore enim mollitia consequatur ducimus"</p>
+            <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus dolores eveniet qui eligendi tenetur amet atque magnam ipsam, omnis provident, deserunt neque? Molestiae ea facere, cupiditate nisi vel accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis unde facilis incidunt at quia vel similique. Asperiores qui saepe iure placeat accusamus culpa minus a debitis reprehenderit, id magni eos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus fugiat corrupti rem omnis? Voluptates vel amet quaerat nulla officia rem aperiam cumque ducimus quibusdam, ipsam est repellendus, sint culpa.</p>
+          </div>
+        </div>
+        <br>
+        <hr style="margin-left: 10px; margin-right: 10px;">
+        <br>
+        <div class="roomflex">
+          <div class="rItem" style="margin-top: 40px;">
+            <h2 style="margin-left: 10px;">Cost Effective</h2>
+            <p style="font-size: 20px; margin-left: 10px;">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore enim mollitia consequatur ducimus"</p>
+            <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus dolores eveniet qui eligendi tenetur amet atque magnam ipsam, omnis provident, deserunt neque? Molestiae ea facere, cupiditate nisi vel accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis unde facilis incidunt at quia vel similique. Asperiores qui saepe iure placeat accusamus culpa minus a debitis reprehenderit, id magni eos?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto possimus fugiat corrupti rem omnis? Voluptates vel amet quaerat nulla officia rem aperiam cumque ducimus quibusdam, ipsam est repellendus, sint culpa.</p>
+          </div>
+          <div class="ritem">
+            <img src="./images/img2.jpg" alt="ConferenceRoom" style="margin-left: 2px; width: 600px; height: 438px;">
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-flex">
+          <div class="flex-item">
+            <h2>About</h2>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Facere id consectetur
+              amet<br> harum quisquam eius accusamus quo illo.<br>Itaque dolores assumenda,<br>accusantium tenetur ipsa at
+              provident<br>incidunt voluptas nam explicabo?</p>
+            <p style="font-size: 15px; align-content: center;">Copyright &copy 2022 ConferenceRooms</p>
+          </div>
+          <div class="flex-item">
+            <div class="social flex">
+              <h2>Quick Links</h2><br>
+              <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"><h3>Facebook</h3></a></i><br><br>
+              <i class="fab fa-twitter"><a href="https://twitter.com/"><h3>Twitter</h3></a></i><br><br>
+              <i class="fab fa-instagram"><a href="https://www.instagram.com/"><h3>Instagram</h3></a></i><br><Br>
+              <i class="fab fa-youtube"><a href="https://www.youtube.com/"><h3>Youtube</h3></a></i>
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="Address">
+              <h2>Contact Us</h2><br>
+              <i class="fas fa-map-marker-alt"></i><h3>Address</h3>
+              <p>Hyderabad | India</p><br>
+              <i class="fas fa-phone"></i><br><h3>Phone</h3>
+              <p>+91 88888 88888</p><br>
+              <i class="far fa-envelope"></i><h3>Email</h3>
+              <p>conferenceroom@crbs.com</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

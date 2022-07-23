@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contactus.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<title>Contact Us | ConferenceRooms</title>
+
+	<style>
+		body {
+			background-color: aliceblue;
+      margin-left: 10px;
+      margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="content">
+              <div class="logo">
+                <a href="#">Conference Rooms</a>
+              </div>
+              <ul class="menu-list">
+                <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                <li><a href="./afteruserlogin.html" id="login-hover">Home</a></li>
+                <li><a href="./rooms.html" id="login-hover">Meeting Rooms</a></li>
+                <li><a href="#" id="login-hover">My Bookings</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+              </ul>
+              <a href="#" id="login-hover" style="color: white;"><b>Hi User</b></a>
+              <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+      </div>
+          <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+              navbar.classList.add("show");
+              menuBtn.classList.add("hide");
+              body.classList.add("disabled");
+            }
+            cancelBtn.onclick = ()=>{
+              body.classList.remove("disabled");
+              navbar.classList.remove("show");
+              menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+              this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+          </script>
+          <br><br><br><br><br>
+    <div class="help" style="background-color: rgba(128, 128, 128, 0.258); height: 100px; align-content: center; align-self : center;">
+        <h3 style="margin-left: 60px;;">We love to help you out! Feel free to reach out us at any time!!</h3><br>
+        <p style="margin-left: 60px;">We are 24/7 at your service </p>
+    </div>
+    <div class="location">
+        <h2>Our Location</h2>
+        <hr style="margin-right: 1000px;">
+        <br>
+        <div class= "location-flex" style="display: flex; gap: 300px; margin-left: 50px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1904.436662751011!2d78.59283165802773!3d17.321659997029542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x762076350c1134ab!2zMTfCsDE5JzE4LjAiTiA3OMKwMzUnMzguMSJF!5e0!3m2!1sen!2sin!4v1651944950851!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="flex-item">
+              <div class="Address">
+                <h2>Contact Us</h2><br>
+                <i class="fas fa-map-marker-alt"></i><h3>Address</h3>
+                <p>Hyderabad | India</p><br>
+                <i class="fas fa-phone"></i><br><h3>Phone</h3>
+                <p>+91 88888 88888</p><br>
+                <i class="far fa-envelope"></i><h3>Email</h3>
+                <p>conferenceroom@crbs.com</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+      <div class="footer-flex">
+        <div class="flex-item">
+          <h2>About</h2>
+          <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Facere id consectetur
+            amet<br> harum quisquam eius accusamus quo illo.<br>Itaque dolores assumenda,<br>accusantium tenetur ipsa at
+            provident<br>incidunt voluptas nam explicabo?</p>
+          <p style="font-size: 15px; align-content: center;">Copyright &copy 2022 ConferenceRooms</p>
+        </div>
+        <div class="flex-item">
+          <div class="social flex">
+            <h2>Quick Links</h2><br>
+            <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"><h3>Facebook</h3></a></i><br><br>
+            <i class="fab fa-twitter"><a href="https://twitter.com/"><h3>Twitter</h3></a></i><br><br>
+            <i class="fab fa-instagram"><a href="https://www.instagram.com/"><h3>Instagram</h3></a></i><br><Br>
+            <i class="fab fa-youtube"><a href="https://www.youtube.com/"><h3>Youtube</h3></a></i>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="Address">
+            <h2>Contact Us</h2><br>
+            <i class="fas fa-map-marker-alt"></i><h3>Address</h3>
+            <p>Hyderabad | India</p><br>
+            <i class="fas fa-phone"></i><br><h3>Phone</h3>
+            <p>+91 88888 88888</p><br>
+            <i class="far fa-envelope"></i><h3>Email</h3>
+            <p>conferenceroom@crbs.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

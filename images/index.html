@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Rooms</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Conference Rooms</a>
+        <!-- <img src="./logo.png" alt = "ConferenceRooms"> -->
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#" id="login-hover">User Login</a></li>
+        <li><a href="#" id="login-hover">Client Login</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+
+  <div class="home" id="home">
+    <div>
+      <!-- <h1 style="color: rgb(22, 89, 145);">Conference Rooms</h1>
+      <p style = "color: rgb(109, 143, 170);;">Experince The Best Meetings Ever</p> -->
+      <h1 style="color: black">Conference Rooms</h1>
+      <p style="color: black; text-transform: uppercase;">Experince The Best Meetings Ever</p>
+    </div>
+  </div>
+  <br>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+  <section class="gallery top" id="gallery" style="cursor: pointer;">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="./g1.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./g2.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./g3.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./g4.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./g5.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./g4.jpg" alt="">
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+  <div class="login-text">
+    <h3 style="text-align: center; font-size: 50px;"> Wondereing how the best meeting go on...?</h3>
+  </div>
+  <br>
+  <div class="login-class">
+    <div class="login-client">
+      <h2> For Clients </h2>
+      <h4>Make the best meetings possible</h4>
+      <p>
+        We make your best rooms<br>
+        available to the world to <br>
+        make best meetings ever possible.<br><br>
+      </p>
+      <button class="btn login-client-btn"> Make Your Rooms Visible to Outer World </button>
+    </div>
+    <div class="vl"></div>
+    <div class="login-user">
+      <h2>For Users</h2>
+      <h4>Tring to get best meeting experience...?</h4>
+      <p>
+        Ever experienced how a peaceful<br>
+        meetings go on...? That is what we<br>
+        provide to our users daily!!<br><br><br>
+      </p>
+      <button class="btn login-user-btn">Make Your Meetings Peaceful</button>
+    </div>
+    <div class="vl"></div>
+    <div>
+      <img src="./images/meeting.jpg" alt="meeting" height="350px" style="margin-top: 10%;">
+    </div>
+  </div>
+  <br><br><br>
+  <footer>
+    <div class="footer-flex">
+      <div class="flex-item">
+        <h2>About</h2>
+        <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Facere id consectetur
+          amet<br> harum quisquam eius accusamus quo illo.<br>Itaque dolores assumenda,<br>accusantium tenetur ipsa at
+          provident<br>incidunt voluptas nam explicabo?</p>
+        <p style="font-size: 15px; align-content: center;">Copyright &copy 2022 ConferenceRooms</p>
+      </div>
+      <div class="flex-item">
+        <div class="social flex">
+          <h2>Quick Links</h2>
+          <i class="fab fa-facebook-f"><a href="https://www.facebook.com/">
+              <h3>Facebook</h3>
+            </a></i><br>
+          <i class="fab fa-twitter"><a href="https://twitter.com/">
+              <h3>Twitter</h3>
+            </a></i><br>
+          <i class="fab fa-instagram"><a href="https://www.instagram.com/">
+              <h3>Instagram</h3>
+            </a></i><br>
+          <i class="fab fa-youtube"><a href="https://www.youtube.com/">
+              <h3>Youtube</h3>
+            </a></i>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="Address">
+          <h2>Contact Us</h2>
+          <i class="fas fa-map-marker-alt">
+            <h3>Address</h3>
+          </i><br>
+          <p>Hyderabad | India</p>
+          <i class="fas fa-phone">
+            <h3>Phone</h3>
+          </i><br>
+          <p>+91 88888 88888</p>
+          <i class="far fa-envelope">
+            <h3>Email</h3>
+          </i><br>
+          <p>conferenceroom@crbs.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+
+</html>
